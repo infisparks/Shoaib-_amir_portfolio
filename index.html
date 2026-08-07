@@ -126,8 +126,8 @@
         <nav class="bg-brand-green text-white rounded-full px-4 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between shadow-xl transition-all duration-300 border border-white/10">
             <!-- Brand Logo -->
             <a href="#" class="flex items-center gap-2 group">
-                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-brand-gold flex items-center justify-center font-extrabold text-brand-greenDark text-sm sm:text-lg shadow-md group-hover:scale-105 transition-transform">
-                    SA
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-brand-gold flex items-center justify-center font-extrabold text-brand-greenDark text-sm sm:text-lg shadow-md group-hover:scale-105 transition-transform overflow-hidden border border-white/30">
+                    <img src="profile.png" alt="Shoaib Aamir" class="w-full h-full object-cover object-top">
                 </div>
                 <div class="flex flex-col">
                     <span class="font-extrabold text-base sm:text-xl tracking-tight leading-none text-white">Shoaib Aamir</span>
@@ -173,65 +173,28 @@
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
             
-            <!-- HERO VISUAL COMPOSITION (Order-1 on Mobile: Organic Fluid Cutout Format - No Card Box!) -->
-            <div class="order-1 lg:order-2 lg:col-span-5 relative flex justify-center items-center py-2 sm:py-6">
+            <!-- HERO VISUAL COMPOSITION (Large Pop-Out Portrait - No Clutter Widgets) -->
+            <div class="order-1 lg:order-2 lg:col-span-5 relative flex justify-center items-center py-4 sm:py-8">
                 
-                <div class="relative w-[240px] h-[280px] xs:w-[280px] xs:h-[330px] sm:w-[360px] sm:h-[420px] flex items-center justify-center">
+                <div class="relative w-[300px] h-[360px] xs:w-[340px] xs:h-[410px] sm:w-[420px] sm:h-[500px] lg:w-[460px] lg:h-[540px] flex items-end justify-center">
                     
-                    <!-- Main Vibrant Gold/Yellow Organic Backdrop Blob -->
-                    <div class="absolute inset-0 bg-brand-gold rounded-[50%_50%_40%_60%/60%_40%_60%_40%] animate-pulse-slow shadow-2xl transition-all duration-700 hover:rounded-[40%_60%_50%_50%/50%_50%_40%_60%]"></div>
+                    <!-- Main Vibrant Gold/Yellow Organic Backdrop Circle (Positioned lower so top pops out) -->
+                    <div class="absolute w-[88%] h-[82%] bottom-0 bg-brand-gold rounded-[50%_50%_40%_60%/60%_40%_60%_40%] animate-pulse-slow shadow-2xl transition-all duration-700 hover:rounded-[40%_60%_50%_50%/50%_50%_40%_60%]"></div>
                     
                     <!-- Soft Background Accent Ring -->
-                    <div class="absolute -inset-2 bg-brand-green/15 rounded-[60%_40%_50%_50%/40%_60%_50%_50%] transform -rotate-6 blur-sm"></div>
+                    <div class="absolute w-[92%] h-[85%] bottom-0 bg-brand-green/15 rounded-[60%_40%_50%_50%/40%_60%_50%_50%] transform -rotate-6 blur-sm"></div>
 
-                    <!-- Cutout Portrait Display (Direct overlay without rectangle box) -->
+                    <!-- Cutout Portrait Display (Extends outside top of background circle) -->
                     <div class="relative z-10 w-full h-full flex flex-col items-center justify-end overflow-visible">
                         
-                        <!-- High Resolution Professional Portrait Cutout -->
-                        <div class="relative w-[88%] h-[88%] flex items-end justify-center">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
+                        <!-- High Resolution Professional Portrait -->
+                        <div class="relative w-[96%] h-[98%] flex items-end justify-center overflow-hidden rounded-b-[40px] sm:rounded-b-[60px] rounded-t-[100px] sm:rounded-t-[140px] border-4 border-white/60 shadow-2xl">
+                            <img src="profile.png" 
                                  alt="Shoaib Aamir - Business Consultant" 
-                                 class="w-full h-full object-cover object-top drop-shadow-[0_20px_20px_rgba(0,0,0,0.3)] rounded-b-full filter contrast-[1.05]"
-                                 onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-end pb-4 text-brand-greenDark\'><i class=\'fa-solid fa-user-tie text-7xl sm:text-9xl filter drop-shadow-lg\'></i><span class=\'font-black text-lg sm:text-xl mt-2 tracking-tight\'>Shoaib Aamir</span></div>';">
+                                 class="w-full h-full object-cover object-top drop-shadow-[0_25px_30px_rgba(0,0,0,0.4)] filter contrast-[1.05]"
+                                 onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center text-brand-greenDark\'><i class=\'fa-solid fa-user-tie text-7xl sm:text-9xl filter drop-shadow-lg\'></i><span class=\'font-black text-lg sm:text-xl mt-2 tracking-tight\'>Shoaib Aamir</span></div>';">
                         </div>
 
-                        <!-- Floating Green Skill Tag (Left Bottom) -->
-                        <div class="absolute bottom-6 -left-3 sm:-left-6 z-20 bg-brand-green text-white text-[10px] sm:text-xs font-extrabold px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-xl flex items-center gap-1.5 transform -rotate-3 hover:scale-105 transition-transform border border-white/20">
-                            <i class="fa-solid fa-chart-pie text-brand-gold text-xs"></i>
-                            <span>Business Consultant</span>
-                        </div>
-
-                        <!-- Floating Gold Skill Tag (Right Center) -->
-                        <div class="absolute top-1/2 -right-2 sm:-right-6 z-20 bg-brand-gold text-brand-greenDark text-[10px] sm:text-xs font-extrabold px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-xl flex items-center gap-1.5 transform rotate-3 hover:scale-105 transition-transform border border-white/40">
-                            <i class="fa-solid fa-bullhorn text-xs"></i>
-                            <span>Growth Strategist</span>
-                        </div>
-                    </div>
-
-                    <!-- Circular Rotating Stamp Badge (Top Right) -->
-                    <div class="absolute -top-3 -right-2 sm:-top-5 sm:right-0 z-30 w-20 h-20 sm:w-26 sm:h-26 bg-brand-greenDark rounded-full p-1.5 text-white shadow-2xl flex items-center justify-center animate-spin-slow border-2 border-brand-gold">
-                        <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-brand-gold font-bold text-[10px] tracking-widest">
-                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
-                            <text>
-                                <textPath href="#circlePath" startOffset="0%">
-                                    • SHOAIB AAMIR • GROWTH CONSULTANT
-                                </textPath>
-                            </text>
-                        </svg>
-                        <div class="absolute inset-0 flex items-center justify-center text-white">
-                            <i class="fa-solid fa-arrow-up-right-from-square text-xs sm:text-base text-brand-gold"></i>
-                        </div>
-                    </div>
-
-                    <!-- Floating Trophy Pill Badge (Bottom Left) -->
-                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:left-4 sm:translate-x-0 z-30 bg-white/95 backdrop-blur-md border border-gray-200 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl shadow-xl flex items-center gap-2.5 animate-float">
-                        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-brand-goldLight text-brand-gold flex items-center justify-center font-bold text-sm sm:text-base shadow-inner">
-                            <i class="fa-solid fa-trophy"></i>
-                        </div>
-                        <div class="text-left">
-                            <div class="text-[10px] sm:text-xs font-extrabold text-brand-textDark">Proven Scalability</div>
-                            <div class="text-[9px] sm:text-[11px] text-brand-textMuted font-medium">100% Tailored Strategy</div>
-                        </div>
                     </div>
 
                 </div>
@@ -338,11 +301,13 @@
             
             <!-- Left Circle Graphic -->
             <div class="lg:col-span-5 flex justify-center relative">
-                <div class="relative w-56 h-56 sm:w-80 sm:h-80 rounded-full bg-brand-gold p-2.5 sm:p-3 shadow-2xl">
-                    <div class="w-full h-full rounded-full bg-brand-greenDark border-4 border-white/20 flex flex-col items-center justify-center p-4 sm:p-6 text-center">
-                        <i class="fa-solid fa-crown text-brand-gold text-3xl sm:text-5xl mb-2 sm:mb-3"></i>
-                        <h3 class="text-lg sm:text-2xl font-black text-white">Shoaib Aamir</h3>
-                        <p class="text-[10px] sm:text-xs text-brand-gold font-medium mt-0.5">Strategic Business Visionary</p>
+                <div class="relative w-56 h-56 sm:w-80 sm:h-80 rounded-full bg-brand-gold p-2 sm:p-2.5 shadow-2xl">
+                    <div class="w-full h-full rounded-full overflow-hidden border-4 border-white/20 relative shadow-inner">
+                        <img src="profile.png" alt="Shoaib Aamir" class="w-full h-full object-cover object-top filter contrast-[1.03]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-greenDark/95 via-brand-greenDark/30 to-transparent flex flex-col justify-end p-3 sm:p-5 text-center">
+                            <h3 class="text-base sm:text-xl font-black text-white drop-shadow">Shoaib Aamir</h3>
+                            <p class="text-[9px] sm:text-xs text-brand-gold font-bold">Strategic Business Visionary</p>
+                        </div>
                     </div>
 
                     <!-- Floating Pill Tags -->
