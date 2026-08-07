@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoaib Aamir | Business Strategy & Marketing Consultant</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#163A24',
+                            greenDark: '#0D2617',
+                            greenLight: '#235235',
+                            gold: '#EAA315',
+                            goldHover: '#D89108',
+                            goldLight: '#FEF3C7',
+                            bgLight: '#F5F6F1',
+                            cardBg: '#ECEFE6',
+                            textDark: '#121A15',
+                            textMuted: '#526056'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        hand: ['"Caveat"', 'cursive']
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-6px)' }
+                        },
+                        spinSlow: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' }
+                        },
+                        pulseSlow: {
+                            '0%, 100%': { transform: 'scale(1)' },
+                            '50%': { transform: 'scale(1.02)' }
+                        }
+                    },
+                    animation: {
+                        marquee: 'marquee 22s linear infinite',
+                        float: 'float 4s ease-in-out infinite',
+                        'spin-slow': 'spinSlow 18s linear infinite',
+                        'pulse-slow': 'pulseSlow 6s ease-in-out infinite'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Modern UI Tweaks & Custom Brackets */
+        .dashed-bracket {
+            position: relative;
+            padding: 3px 12px;
+            border: 1px dashed #EAA315;
+            border-radius: 4px;
+        }
+        .dashed-bracket::before, .dashed-bracket::after {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-color: #EAA315;
+            border-style: solid;
+        }
+        .dashed-bracket::before { top: -2px; left: -2px; border-width: 2px 0 0 2px; }
+        .dashed-bracket::after { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
+        
+        .gold-glow {
+            box-shadow: 0 8px 25px -8px rgba(234, 163, 21, 0.4);
+        }
+
+        .green-glow {
+            box-shadow: 0 10px 30px -8px rgba(22, 58, 36, 0.45);
+        }
+
+        /* Responsive Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5F6F1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #163A24;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-brand-bgLight text-brand-textDark font-sans antialiased selection:bg-brand-gold selection:text-brand-greenDark">
+
+    <!-- FLOATING QUICK WHATSAPP CTA -->
+    <a href="https://wa.me/918378884188?text=Hello%20Shoaib%20Aamir,%20I%20would%20like%20to%20book%20a%20business%20consultation." 
+       target="_blank" 
+       class="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 sm:p-4 rounded-full shadow-2xl flex items-center gap-2 group transition-all duration-300 hover:scale-105 active:scale-95"
+       aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+        <span class="hidden sm:inline font-bold text-xs sm:text-sm pr-1">Chat with Shoaib</span>
+        <span class="relative flex h-2.5 w-2.5 -top-3 -right-1 sm:hidden">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-gold"></span>
+        </span>
+    </a>
+
+    <!-- TOP HEADER / NAV BAR -->
+    <header class="sticky top-2 sm:top-3 z-40 px-3 sm:px-8 max-w-7xl mx-auto">
+        <nav class="bg-brand-green text-white rounded-full px-4 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between shadow-xl transition-all duration-300 border border-white/10">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-brand-gold flex items-center justify-center font-extrabold text-brand-greenDark text-sm sm:text-lg shadow-md group-hover:scale-105 transition-transform">
+                    SA
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-base sm:text-xl tracking-tight leading-none text-white">Shoaib Aamir</span>
+                    <span class="text-[9px] sm:text-[10px] text-brand-gold font-medium tracking-wider uppercase">Consultant & Strategist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-7 font-medium text-xs sm:text-sm text-gray-200">
+                <a href="#home" class="hover:text-brand-gold transition-colors text-brand-gold font-semibold">Home</a>
+                <a href="#about" class="hover:text-brand-gold transition-colors">About</a>
+                <a href="#services" class="hover:text-brand-gold transition-colors">Services</a>
+                <a href="#training" class="hover:text-brand-gold transition-colors">Training</a>
+                <a href="#contact" class="hover:text-brand-gold transition-colors">Contact</a>
+            </div>
+
+            <!-- Header Action Button -->
+            <div class="flex items-center gap-2 sm:gap-3">
+                <a href="#contact" class="bg-white text-brand-greenDark font-bold text-xs sm:text-sm px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-full hover:bg-brand-gold hover:text-brand-greenDark transition-all duration-300 shadow-md flex items-center gap-1.5 sm:gap-2">
+                    <span class="hidden xs:inline">Book</span> Consultation
+                    <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs"></i>
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-white p-2 focus:outline-none rounded-lg active:bg-brand-greenDark" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobileMenu" class="hidden md:hidden bg-brand-green/95 backdrop-blur-lg border border-brand-greenLight rounded-2xl mt-2 p-5 text-white flex flex-col gap-3 shadow-2xl transition-all">
+            <a href="#home" class="mobile-link text-brand-gold font-bold text-sm py-1 border-b border-white/10">Home</a>
+            <a href="#about" class="mobile-link hover:text-brand-gold text-sm py-1 border-b border-white/10">About Shoaib Aamir</a>
+            <a href="#services" class="mobile-link hover:text-brand-gold text-sm py-1 border-b border-white/10">All 10 Core Services</a>
+            <a href="#training" class="mobile-link hover:text-brand-gold text-sm py-1 border-b border-white/10">Training & Leadership</a>
+            <a href="#contact" class="mobile-link hover:text-brand-gold text-sm py-1">Contact & WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Updated: Non-Card Organic Cutout Portrait Layout) -->
+    <section id="home" class="min-h-[calc(100dvh-4.5rem)] lg:min-h-0 flex flex-col justify-center pt-2 pb-6 sm:pt-8 sm:pb-16 md:pt-16 md:pb-24 px-4 sm:px-8 max-w-7xl mx-auto overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
+            
+            <!-- HERO VISUAL COMPOSITION (Order-1 on Mobile: Organic Fluid Cutout Format - No Card Box!) -->
+            <div class="order-1 lg:order-2 lg:col-span-5 relative flex justify-center items-center py-2 sm:py-6">
+                
+                <div class="relative w-[240px] h-[280px] xs:w-[280px] xs:h-[330px] sm:w-[360px] sm:h-[420px] flex items-center justify-center">
+                    
+                    <!-- Main Vibrant Gold/Yellow Organic Backdrop Blob -->
+                    <div class="absolute inset-0 bg-brand-gold rounded-[50%_50%_40%_60%/60%_40%_60%_40%] animate-pulse-slow shadow-2xl transition-all duration-700 hover:rounded-[40%_60%_50%_50%/50%_50%_40%_60%]"></div>
+                    
+                    <!-- Soft Background Accent Ring -->
+                    <div class="absolute -inset-2 bg-brand-green/15 rounded-[60%_40%_50%_50%/40%_60%_50%_50%] transform -rotate-6 blur-sm"></div>
+
+                    <!-- Cutout Portrait Display (Direct overlay without rectangle box) -->
+                    <div class="relative z-10 w-full h-full flex flex-col items-center justify-end overflow-visible">
+                        
+                        <!-- High Resolution Professional Portrait Cutout -->
+                        <div class="relative w-[88%] h-[88%] flex items-end justify-center">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800" 
+                                 alt="Shoaib Aamir - Business Consultant" 
+                                 class="w-full h-full object-cover object-top drop-shadow-[0_20px_20px_rgba(0,0,0,0.3)] rounded-b-full filter contrast-[1.05]"
+                                 onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-end pb-4 text-brand-greenDark\'><i class=\'fa-solid fa-user-tie text-7xl sm:text-9xl filter drop-shadow-lg\'></i><span class=\'font-black text-lg sm:text-xl mt-2 tracking-tight\'>Shoaib Aamir</span></div>';">
+                        </div>
+
+                        <!-- Floating Green Skill Tag (Left Bottom) -->
+                        <div class="absolute bottom-6 -left-3 sm:-left-6 z-20 bg-brand-green text-white text-[10px] sm:text-xs font-extrabold px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-xl flex items-center gap-1.5 transform -rotate-3 hover:scale-105 transition-transform border border-white/20">
+                            <i class="fa-solid fa-chart-pie text-brand-gold text-xs"></i>
+                            <span>Business Consultant</span>
+                        </div>
+
+                        <!-- Floating Gold Skill Tag (Right Center) -->
+                        <div class="absolute top-1/2 -right-2 sm:-right-6 z-20 bg-brand-gold text-brand-greenDark text-[10px] sm:text-xs font-extrabold px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full shadow-xl flex items-center gap-1.5 transform rotate-3 hover:scale-105 transition-transform border border-white/40">
+                            <i class="fa-solid fa-bullhorn text-xs"></i>
+                            <span>Growth Strategist</span>
+                        </div>
+                    </div>
+
+                    <!-- Circular Rotating Stamp Badge (Top Right) -->
+                    <div class="absolute -top-3 -right-2 sm:-top-5 sm:right-0 z-30 w-20 h-20 sm:w-26 sm:h-26 bg-brand-greenDark rounded-full p-1.5 text-white shadow-2xl flex items-center justify-center animate-spin-slow border-2 border-brand-gold">
+                        <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-brand-gold font-bold text-[10px] tracking-widest">
+                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                            <text>
+                                <textPath href="#circlePath" startOffset="0%">
+                                    • SHOAIB AAMIR • GROWTH CONSULTANT
+                                </textPath>
+                            </text>
+                        </svg>
+                        <div class="absolute inset-0 flex items-center justify-center text-white">
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs sm:text-base text-brand-gold"></i>
+                        </div>
+                    </div>
+
+                    <!-- Floating Trophy Pill Badge (Bottom Left) -->
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:left-4 sm:translate-x-0 z-30 bg-white/95 backdrop-blur-md border border-gray-200 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl shadow-xl flex items-center gap-2.5 animate-float">
+                        <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-brand-goldLight text-brand-gold flex items-center justify-center font-bold text-sm sm:text-base shadow-inner">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-[10px] sm:text-xs font-extrabold text-brand-textDark">Proven Scalability</div>
+                            <div class="text-[9px] sm:text-[11px] text-brand-textMuted font-medium">100% Tailored Strategy</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HERO TEXT CONTENT (Order-2 on Mobile) -->
+            <div class="order-2 lg:order-1 lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left gap-3.5 sm:gap-6">
+                
+                <!-- Greeting Badge -->
+                <div class="dashed-bracket inline-flex items-center gap-1.5 text-[10px] sm:text-xs font-bold uppercase tracking-widest text-brand-textDark">
+                    <span>Hello There! 👋</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-extrabold text-brand-textDark leading-[1.18] tracking-tight">
+                    I’m <span class="text-brand-gold underline decoration-brand-gold/40 decoration-wavy">Shoaib Aamir</span>, Driving Business Growth & Market Dominance.
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-xs sm:text-base text-brand-textMuted max-w-2xl font-normal leading-relaxed">
+                    Comprehensive consulting and strategy solutions to scale your business, optimize core operations, and maximize profitability for startups, MSMEs, and enterprises.
+                </p>
+
+                <!-- Core Slogan Highlight Badge -->
+                <div class="bg-brand-goldLight border border-brand-gold/40 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl sm:rounded-2xl flex items-center gap-2 sm:gap-3 my-0.5">
+                    <i class="fa-solid fa-quote-left text-brand-gold text-sm sm:text-lg"></i>
+                    <span class="font-bold text-brand-greenDark text-xs sm:text-base italic">
+                        "World is Business, Life is Marketing!"
+                    </span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col xs:flex-row items-center justify-center lg:justify-start gap-2.5 sm:gap-4 w-full pt-1">
+                    <!-- Primary CTA -->
+                    <a href="#services" class="w-full xs:w-auto bg-brand-green text-white font-bold text-xs sm:text-base px-5 sm:px-6 py-3 sm:py-3.5 rounded-full hover:bg-brand-greenDark transition-all duration-300 shadow-lg flex items-center justify-center gap-2.5 group green-glow">
+                        <span>View Our Services</span>
+                        <div class="w-6 h-6 rounded-full bg-brand-gold text-brand-greenDark flex items-center justify-center group-hover:translate-x-1 transition-transform text-[10px]">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <!-- Secondary CTA (WhatsApp) -->
+                    <a href="https://wa.me/918378884188?text=Hello%20Shoaib%20Aamir,%20I%20would%20like%20to%20book%20a%20business%20consultation." target="_blank" class="w-full xs:w-auto bg-white border-2 border-brand-green text-brand-green font-bold text-xs sm:text-base px-5 sm:px-6 py-3 sm:py-3.5 rounded-full hover:bg-emerald-50 transition-all duration-300 flex items-center justify-center gap-2 shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-lg sm:text-xl"></i>
+                        <span>Contact via WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Quick Key Metrics -->
+                <div class="grid grid-cols-3 gap-2 sm:gap-6 pt-3 sm:pt-6 border-t border-gray-200/80 w-full max-w-lg">
+                    <div>
+                        <div class="text-xl sm:text-3xl font-extrabold text-brand-green">10+</div>
+                        <div class="text-[10px] sm:text-xs text-brand-textMuted font-medium">Core Domains</div>
+                    </div>
+                    <div>
+                        <div class="text-xl sm:text-3xl font-extrabold text-brand-gold">500+</div>
+                        <div class="text-[10px] sm:text-xs text-brand-textMuted font-medium">Businesses Scaled</div>
+                    </div>
+                    <div>
+                        <div class="text-xl sm:text-3xl font-extrabold text-brand-green">15+</div>
+                        <div class="text-[10px] sm:text-xs text-brand-textMuted font-medium">Years Experience</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TICKER MARQUEE BANNER -->
+    <div class="bg-brand-gold border-y-2 border-brand-greenDark py-2.5 sm:py-3.5 overflow-hidden whitespace-nowrap shadow-md">
+        <div class="inline-flex animate-marquee gap-6 sm:gap-8 font-extrabold text-brand-greenDark text-xs sm:text-base uppercase tracking-wider items-center">
+            <span>✦ Business Strategy & Consulting</span>
+            <span>✦ Manufacturing & Wholesale Solutions</span>
+            <span>✦ Retail & E-Commerce Solutions</span>
+            <span>✦ Branding & Digital Marketing</span>
+            <span>✦ Lead Generation & Sales Optimization</span>
+            <span>✦ Telesales & Scripting</span>
+            <span>✦ Data Analysis & Cybersecurity</span>
+            <span>✦ Finance & Investment Advisory</span>
+            <span>✦ Team Training & Leadership</span>
+            <span>✦ Logistics & Supply Chain</span>
+            <!-- Repeat for Seamless Loop -->
+            <span>✦ Business Strategy & Consulting</span>
+            <span>✦ Manufacturing & Wholesale Solutions</span>
+            <span>✦ Retail & E-Commerce Solutions</span>
+            <span>✦ Branding & Digital Marketing</span>
+            <span>✦ Lead Generation & Sales Optimization</span>
+            <span>✦ Telesales & Scripting</span>
+            <span>✦ Data Analysis & Cybersecurity</span>
+            <span>✦ Finance & Investment Advisory</span>
+            <span>✦ Team Training & Leadership</span>
+            <span>✦ Logistics & Supply Chain</span>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bg-brand-green text-white py-12 sm:py-20 px-4 sm:px-8 my-8 sm:my-12 rounded-2xl sm:rounded-3xl max-w-7xl mx-auto shadow-2xl relative overflow-hidden">
+        
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
+            
+            <!-- Left Circle Graphic -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-56 h-56 sm:w-80 sm:h-80 rounded-full bg-brand-gold p-2.5 sm:p-3 shadow-2xl">
+                    <div class="w-full h-full rounded-full bg-brand-greenDark border-4 border-white/20 flex flex-col items-center justify-center p-4 sm:p-6 text-center">
+                        <i class="fa-solid fa-crown text-brand-gold text-3xl sm:text-5xl mb-2 sm:mb-3"></i>
+                        <h3 class="text-lg sm:text-2xl font-black text-white">Shoaib Aamir</h3>
+                        <p class="text-[10px] sm:text-xs text-brand-gold font-medium mt-0.5">Strategic Business Visionary</p>
+                    </div>
+
+                    <!-- Floating Pill Tags -->
+                    <div class="absolute top-1 -left-2 sm:top-2 sm:-left-4 bg-white text-brand-greenDark font-bold text-[9px] sm:text-[11px] px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full shadow-lg">
+                        Startup Scaling
+                    </div>
+                    <div class="absolute bottom-4 -left-3 sm:bottom-6 sm:-left-6 bg-brand-gold text-brand-greenDark font-bold text-[9px] sm:text-[11px] px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full shadow-lg">
+                        Omnichannel Sales
+                    </div>
+                    <div class="absolute -bottom-1 right-4 sm:-bottom-2 sm:right-6 bg-emerald-500 text-white font-bold text-[9px] sm:text-[11px] px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full shadow-lg">
+                        MSME Growth
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column Text -->
+            <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left gap-4 sm:gap-6">
+                
+                <div class="flex items-center gap-2 text-brand-gold text-xs sm:text-sm font-bold uppercase tracking-widest">
+                    <span class="w-6 h-[2px] bg-brand-gold"></span>
+                    <span>About Shoaib Aamir</span>
+                </div>
+
+                <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                    Who is <span class="text-brand-gold">Shoaib Aamir?</span>
+                </h2>
+
+                <p class="text-gray-300 text-xs sm:text-base leading-relaxed">
+                    Dedicated to helping businesses scale efficiently. Whether you are a startup, MSME, or enterprise, we provide end-to-end solutions ranging from business strategy and digital marketing to supply chain management and leadership development.
+                </p>
+
+                <!-- Core Motto Callout -->
+                <div class="w-full bg-white/10 border-l-4 border-brand-gold p-3.5 sm:p-4 rounded-r-2xl backdrop-blur-sm text-left">
+                    <p class="text-brand-gold font-bold text-sm sm:text-xl italic">
+                        "World is Business, Life is Marketing!"
+                    </p>
+                    <span class="text-[10px] sm:text-xs text-gray-300 block mt-0.5">— Shoaib Aamir's Core Philosophy</span>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-3 gap-2.5 sm:gap-4 w-full pt-2">
+                    <div class="bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 text-center">
+                        <div class="text-xl sm:text-3xl font-extrabold text-brand-gold">600+</div>
+                        <div class="text-[9px] sm:text-[11px] text-gray-300 mt-0.5">Projects Done</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 text-center">
+                        <div class="text-xl sm:text-3xl font-extrabold text-white">50+</div>
+                        <div class="text-[9px] sm:text-[11px] text-gray-300 mt-0.5">Industries</div>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-2.5 sm:p-4 text-center">
+                        <div class="text-xl sm:text-3xl font-extrabold text-brand-gold">18+</div>
+                        <div class="text-[9px] sm:text-[11px] text-gray-300 mt-0.5">Years Exp.</div>
+                    </div>
+                </div>
+
+                <!-- Signature & Button -->
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 w-full pt-2 border-t border-white/10">
+                    <a href="#contact" class="w-full sm:w-auto bg-brand-gold text-brand-greenDark font-bold text-xs sm:text-sm px-5 py-3 rounded-full hover:bg-white transition-all shadow-lg flex items-center justify-center gap-2">
+                        <span>Download Business Profile</span>
+                        <i class="fa-solid fa-download text-xs"></i>
+                    </a>
+                    
+                    <div class="font-hand text-3xl sm:text-4xl text-brand-gold tracking-wide">
+                        Shoaib Aamir
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-12 sm:py-16 px-4 sm:px-8 max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-12 gap-4 sm:gap-6">
+            <div>
+                <div class="flex items-center gap-2 text-brand-green font-bold text-xs uppercase tracking-widest mb-1 sm:mb-2">
+                    <span class="w-6 h-[2px] bg-brand-gold"></span>
+                    <span>Our Expertise</span>
+                </div>
+                <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-brand-textDark">
+                    Services <span class="text-brand-gold">I Provide</span>
+                </h2>
+            </div>
+            
+            <p class="text-brand-textMuted max-w-md text-xs sm:text-sm leading-relaxed">
+                Tailored end-to-end consulting packages designed to transform businesses, increase sales revenue, and streamline operations.
+            </p>
+        </div>
+
+        <!-- Service Category Filter Tabs -->
+        <div class="flex flex-wrap gap-2 mb-8 pb-2 border-b border-gray-200">
+            <button onclick="filterServices('all')" class="filter-btn active bg-brand-green text-white px-4 py-2 rounded-full text-xs font-bold transition-all">All 10 Domains</button>
+            <button onclick="filterServices('strategy')" class="filter-btn bg-white text-brand-textMuted hover:bg-brand-goldLight hover:text-brand-greenDark px-4 py-2 rounded-full text-xs font-bold transition-all border border-gray-200">Strategy & Growth</button>
+            <button onclick="filterServices('marketing')" class="filter-btn bg-white text-brand-textMuted hover:bg-brand-goldLight hover:text-brand-greenDark px-4 py-2 rounded-full text-xs font-bold transition-all border border-gray-200">Marketing & Sales</button>
+            <button onclick="filterServices('operations')" class="filter-btn bg-white text-brand-textMuted hover:bg-brand-goldLight hover:text-brand-greenDark px-4 py-2 rounded-full text-xs font-bold transition-all border border-gray-200">Operations & Tech</button>
+        </div>
+
+        <!-- Services Responsive Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="servicesGrid">
+            
+            <!-- SERVICE 01 -->
+            <div class="service-card strategy group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-chess"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">01</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Business Strategy & Consulting
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Helping businesses scale efficiently by optimizing their core operations, processes, and profitability.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Business Model Development & Market Entry</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Growth Consulting for Startups & MSMEs</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Competitive Analysis & Process Optimization</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(0)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 02 -->
+            <div class="service-card operations group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">02</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Manufacturing & Wholesale
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Supporting manufacturers and wholesalers in streamlining production, bulk distribution, and white-labeling.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Supplier Sourcing & Vendor Management</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Process Automation & Lean Manufacturing</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Wholesale Strategy & Private Label Branding</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(1)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 03 -->
+            <div class="service-card marketing group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">03</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Retail & E-Commerce Solutions
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Helping retailers and e-commerce brands enhance their online/offline sales, CRO, and customer journey.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Brick-and-Mortar & Online Store Setup</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Omnichannel Strategy (Offline + Online)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Conversion Rate Optimization (CRO)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(2)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 04 -->
+            <div class="service-card marketing group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">04</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Branding & Digital Marketing
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Building powerful online and offline brand positioning using performance marketing and SEO techniques.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Brand Identity Design & Positioning</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Social Media Marketing (Meta, LinkedIn, YouTube)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>SEO & Pay-Per-Click Ads Management</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(3)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 05 -->
+            <div class="service-card marketing group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-funnel-dollar"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">05</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Lead Generation & Sales
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Driving recurring top-line revenue growth through automated lead funnels and CRM integrations.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>AI-Powered Lead Generation Strategies</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Sales Funnel & Marketing Automation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>CRM Setup (HubSpot, Zoho, Salesforce)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(4)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 06 -->
+            <div class="service-card marketing group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">06</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Telesales & Scripting
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Boosting call center conversions with customized sales scripts, objection handling, and training.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Customized Industry-Specific Sales Scripts</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Telesales & Cold Calling Mastery</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Call Center Setup & Negotiation Skills</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(5)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 07 -->
+            <div class="service-card operations group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">07</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Data & Cybersecurity
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Providing businesses with data intelligence, predictive analytics, and enterprise data protection.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Business Intelligence & Analytics Dashboards</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Cybersecurity & Data Privacy Compliance</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>AI & Automation for Risk Management</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(6)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 08 -->
+            <div class="service-card strategy group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">08</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Finance & Investment Advisory
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Managing financial risks, optimizing budgets, and preparing strategic roadmaps for investor pitch.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Budgeting & Cost Reduction Frameworks</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Funding & Investor Relations Pitching</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Business Expansion & M&A Advisory</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(7)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 09 -->
+            <div id="training" class="service-card strategy group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">09</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Team Training & Leadership
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Enhancing workforce productivity, management KPIs, and soft skills for long-term business success.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Corporate Leadership & Executive Coaching</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Sales & Customer Service Excellence Training</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Performance Management & KPI Frameworks</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(8)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+            <!-- SERVICE 10 -->
+            <div class="service-card operations group bg-brand-cardBg hover:bg-white border border-gray-200/80 rounded-2xl sm:rounded-3xl p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-center mb-4 sm:mb-6">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white group-hover:bg-brand-gold text-brand-green group-hover:text-brand-greenDark flex items-center justify-center text-lg sm:text-xl shadow-sm transition-colors">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <span class="text-xl sm:text-2xl font-black text-gray-300 group-hover:text-brand-gold transition-colors">10</span>
+                    </div>
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-textDark mb-2 group-hover:text-brand-green transition-colors">
+                        Logistics & Supply Chain
+                    </h3>
+                    
+                    <p class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                        Optimizing distribution networks, warehouse operations, route planning, and order fulfillment.
+                    </p>
+
+                    <ul class="space-y-2 mb-6 text-xs text-brand-textDark font-medium">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Vendor Relationship & Route Planning</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>Inventory Control & Warehouse Management</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-brand-gold mt-0.5"></i>
+                            <span>E-Commerce Fulfillment & Order Tracking</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button onclick="openServiceModal(9)" class="w-full bg-white group-hover:bg-brand-green text-brand-green group-hover:text-white font-bold text-xs py-3 rounded-xl sm:rounded-2xl transition-all duration-300 flex items-center justify-center gap-2 border border-gray-200 group-hover:border-brand-green">
+                    <span>View All Details</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICE DETAIL MODAL POPUP -->
+    <div id="serviceModal" class="fixed inset-0 bg-brand-greenDark/80 backdrop-blur-md z-50 flex items-center justify-center p-3 sm:p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white rounded-2xl sm:rounded-3xl max-w-2xl w-full p-5 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            
+            <button onclick="closeServiceModal()" class="absolute top-4 right-4 sm:top-5 sm:right-5 w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gray-100 hover:bg-brand-gold hover:text-brand-greenDark text-gray-600 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-base sm:text-lg"></i>
+            </button>
+
+            <div class="flex items-center gap-2 text-brand-gold font-bold text-xs uppercase tracking-widest mb-2">
+                <span id="modalNumber" class="px-2 py-0.5 bg-brand-goldLight text-brand-greenDark rounded font-extrabold">01</span>
+                <span>Service Overview</span>
+            </div>
+
+            <h3 id="modalTitle" class="text-xl sm:text-3xl font-extrabold text-brand-textDark mb-2 sm:mb-3">
+                Service Title
+            </h3>
+
+            <p id="modalDescription" class="text-brand-textMuted text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">
+                Service detailed overview.
+            </p>
+
+            <div class="bg-brand-bgLight p-4 sm:p-5 rounded-xl sm:rounded-2xl mb-5">
+                <h4 class="font-extrabold text-brand-greenDark text-xs sm:text-sm mb-2.5 uppercase tracking-wider">Key Offerings Included:</h4>
+                <ul id="modalList" class="space-y-2 text-xs sm:text-sm text-brand-textDark font-medium">
+                    <!-- Dynamic List Items -->
+                </ul>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-2.5 sm:gap-3">
+                <a id="modalBookBtn" href="#contact" onclick="closeServiceModal()" class="flex-1 bg-brand-green text-white font-bold text-center py-3 sm:py-3.5 rounded-xl sm:rounded-2xl hover:bg-brand-greenDark transition-colors text-xs sm:text-sm">
+                    Book Consultation For This Service
+                </a>
+                <button onclick="closeServiceModal()" class="px-5 py-3 border border-gray-300 text-brand-textMuted font-bold rounded-xl sm:rounded-2xl hover:bg-gray-100 text-xs sm:text-sm">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CONTACT & FOOTER SECTION -->
+    <section id="contact" class="bg-brand-greenDark text-white pt-12 sm:pt-20 pb-10 sm:pb-12 px-4 sm:px-8 mt-12 sm:mt-20 relative">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 mb-12 sm:mb-16 items-start">
+                
+                <!-- Left Contact Info -->
+                <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left gap-4 sm:gap-6">
+                    <div class="inline-flex items-center gap-2 bg-white/10 px-3.5 py-1 rounded-full text-brand-gold text-xs font-bold uppercase tracking-wider border border-white/10">
+                        <span>Let's Connect</span>
+                    </div>
+
+                    <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                        Ready to Scale Your Business? <span class="text-brand-gold">Let's Talk.</span>
+                    </h2>
+
+                    <p class="text-gray-300 text-xs sm:text-base max-w-xl">
+                        Schedule a strategic 1-on-1 consultation session with Shoaib Aamir. Transform your business operations, digital presence, and market dominance today.
+                    </p>
+
+                    <!-- Core Tagline Box -->
+                    <div class="bg-brand-green border border-brand-gold/30 p-3.5 sm:p-4 rounded-xl sm:rounded-2xl w-full max-w-lg">
+                        <span class="text-brand-gold font-extrabold text-sm sm:text-base tracking-wide uppercase block">
+                            "World is Business, Life is Marketing!"
+                        </span>
+                    </div>
+
+                    <!-- Direct Contact Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full pt-1">
+                        
+                        <!-- Phone / WhatsApp -->
+                        <a href="https://wa.me/918378884188" target="_blank" class="bg-white/5 border border-white/10 p-3.5 rounded-xl sm:rounded-2xl hover:border-brand-gold transition-all group text-left">
+                            <div class="w-9 h-9 rounded-lg bg-brand-gold/20 text-brand-gold flex items-center justify-center text-base mb-2 group-hover:scale-110 transition-transform">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="text-[10px] text-gray-400 font-medium">Phone / WhatsApp</div>
+                            <div class="text-xs font-bold text-white mt-0.5">+91 8378884188</div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:info@shoaibaamir.com" class="bg-white/5 border border-white/10 p-3.5 rounded-xl sm:rounded-2xl hover:border-brand-gold transition-all group text-left">
+                            <div class="w-9 h-9 rounded-lg bg-brand-gold/20 text-brand-gold flex items-center justify-center text-base mb-2 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="text-[10px] text-gray-400 font-medium">Email Address</div>
+                            <div class="text-xs font-bold text-white mt-0.5 truncate">info@shoaibaamir.com</div>
+                        </a>
+
+                        <!-- Website -->
+                        <a href="https://www.shoaibaamir.com" target="_blank" class="bg-white/5 border border-white/10 p-3.5 rounded-xl sm:rounded-2xl hover:border-brand-gold transition-all group text-left">
+                            <div class="w-9 h-9 rounded-lg bg-brand-gold/20 text-brand-gold flex items-center justify-center text-base mb-2 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="text-[10px] text-gray-400 font-medium">Website</div>
+                            <div class="text-xs font-bold text-white mt-0.5 truncate">www.shoaibaamir.com</div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Quick Form & QR Code Scanner Container -->
+                <div class="lg:col-span-5 bg-white text-brand-textDark rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-2xl border-2 sm:border-4 border-brand-gold/30">
+                    
+                    <h3 class="text-lg sm:text-xl font-extrabold text-brand-greenDark mb-1">
+                        Book a Free Strategic Session
+                    </h3>
+                    <p class="text-xs text-brand-textMuted mb-5">
+                        Fill out your request or scan the QR code to chat instantly on WhatsApp.
+                    </p>
+
+                    <!-- Interactive Scan Me QR Code Block -->
+                    <div class="bg-brand-bgLight p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200 flex items-center gap-3.5 mb-5">
+                        
+                        <!-- Dynamically Rendered Vector QR Code -->
+                        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white p-1.5 rounded-xl shadow-inner flex-shrink-0 flex items-center justify-center">
+                            <svg viewBox="0 0 100 100" class="w-full h-full">
+                                <rect x="5" y="5" width="28" height="28" fill="none" stroke="#163A24" stroke-width="6"/>
+                                <rect x="11" y="11" width="16" height="16" fill="#EAA315"/>
+                                <rect x="67" y="5" width="28" height="28" fill="none" stroke="#163A24" stroke-width="6"/>
+                                <rect x="73" y="11" width="16" height="16" fill="#EAA315"/>
+                                <rect x="5" y="67" width="28" height="28" fill="none" stroke="#163A24" stroke-width="6"/>
+                                <rect x="11" y="73" width="16" height="16" fill="#EAA315"/>
+                                <path d="M40,10 h8 v8 h-8 z M52,10 h8 v8 h-8 z M40,22 h8 v8 h-8 z M52,22 h8 v8 h-8 z M10,40 h8 v8 h-8 z M22,40 h8 v8 h-8 z M34,40 h8 v8 h-8 z M46,40 h8 v8 h-8 z M58,40 h8 v8 h-8 z M70,40 h8 v8 h-8 z M82,40 h8 v8 h-8 z M40,52 h8 v8 h-8 z M52,52 h8 v8 h-8 z M64,52 h8 v8 h-8 z M76,52 h8 v8 h-8 z M40,64 h8 v8 h-8 z M52,76 h8 v8 h-8 z M64,64 h8 v8 h-8 z M76,76 h8 v8 h-8 z M88,64 h8 v8 h-8 z" fill="#163A24"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <div class="inline-block bg-brand-gold text-brand-greenDark text-[9px] font-black px-2 py-0.5 rounded uppercase tracking-wider mb-1">
+                                Scan Me
+                            </div>
+                            <div class="text-xs font-bold text-brand-greenDark">Instant Mobile WhatsApp</div>
+                            <p class="text-[10px] text-brand-textMuted mt-0.5">Scan to chat directly with Shoaib Aamir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct WhatsApp Message Launcher -->
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-3.5">
+                        <div>
+                            <label class="block text-xs font-bold text-brand-textDark mb-1">Your Full Name</label>
+                            <input type="text" id="custName" required placeholder="e.g. Rahul Sharma" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-3.5 py-2 sm:py-2.5 text-xs focus:ring-2 focus:ring-brand-gold focus:outline-none">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-brand-textDark mb-1">Interested Service Domain</label>
+                            <select id="custService" class="w-full bg-gray-50 border border-gray-300 rounded-xl px-3.5 py-2 sm:py-2.5 text-xs focus:ring-2 focus:ring-brand-gold focus:outline-none">
+                                <option>01. Business Strategy & Consulting</option>
+                                <option>02. Manufacturing & Wholesale Solutions</option>
+                                <option>03. Retail & E-Commerce Solutions</option>
+                                <option>04. Branding & Digital Marketing</option>
+                                <option>05. Lead Generation & Sales Optimization</option>
+                                <option>06. Telesales & Sales Scripting</option>
+                                <option>07. Data Analysis & Cybersecurity</option>
+                                <option>08. Finance & Investment Advisory</option>
+                                <option>09. Team Training & Leadership Development</option>
+                                <option>10. Logistics & Supply Chain Management</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-brand-textDark mb-1">Business Query / Message</label>
+                            <textarea id="custMsg" rows="2" placeholder="Briefly describe your business goals..." class="w-full bg-gray-50 border border-gray-300 rounded-xl px-3.5 py-2 sm:py-2.5 text-xs focus:ring-2 focus:ring-brand-gold focus:outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brand-green hover:bg-brand-greenDark text-white font-bold text-xs py-3 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
+                            <span>Send Query via WhatsApp</span>
+                            <i class="fa-brands fa-whatsapp text-sm text-emerald-400"></i>
+                        </button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Line -->
+            <div class="border-t border-white/10 pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
+                <div class="flex items-center gap-2 text-center sm:text-left">
+                    <span class="font-bold text-white">Shoaib Aamir</span>
+                    <span>•</span>
+                    <span class="text-brand-gold font-medium">World is Business, Life is Marketing!</span>
+                </div>
+                <div>
+                    © 2026 Shoaib Aamir. All Rights Reserved.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // 10 Detailed Service Data Objects
+        const servicesData = [
+            {
+                number: "01",
+                title: "Business Strategy & Consulting",
+                description: "Helping businesses scale efficiently by optimizing their core operations, processes, and profitability.",
+                items: [
+                    "Business Model Development & Market Entry Strategy",
+                    "Growth Consulting for Startups, MSMEs, and Enterprises",
+                    "Competitive Analysis & Business Process Optimization",
+                    "Financial Planning & Investment Advisory",
+                    "Risk Management & Compliance Solutions"
+                ]
+            },
+            {
+                number: "02",
+                title: "Manufacturing & Wholesale Solutions",
+                description: "Supporting manufacturers and wholesalers in streamlining production, distribution, and branding.",
+                items: [
+                    "Supplier Sourcing & Vendor Management",
+                    "Process Automation & Lean Manufacturing Implementation",
+                    "Distribution & Logistics Optimization",
+                    "Wholesale Strategy & Bulk Sales Consulting",
+                    "Private Label & White-Label Branding"
+                ]
+            },
+            {
+                number: "03",
+                title: "Retail & E-Commerce Solutions",
+                description: "Helping retailers and e-commerce brands enhance their sales, operations, and brand positioning.",
+                items: [
+                    "Brick-and-Mortar & Online Store Setup",
+                    "Omnichannel Retail Strategy (Offline + Online)",
+                    "Conversion Rate Optimization (CRO)",
+                    "Product Positioning & Customer Experience Enhancement",
+                    "Inventory & Supply Chain Management"
+                ]
+            },
+            {
+                number: "04",
+                title: "Branding & Digital Marketing",
+                description: "Building a strong online and offline presence through data-driven marketing strategies.",
+                items: [
+                    "Brand Strategy, Identity Design & Positioning",
+                    "Social Media Marketing (Facebook, Instagram, X/Twitter, LinkedIn, YouTube)",
+                    "Search Engine Optimization (SEO) & Content Marketing",
+                    "Pay-Per-Click Advertising (Google Ads, Facebook Ads)",
+                    "Influencer Marketing & PR Strategy"
+                ]
+            },
+            {
+                number: "05",
+                title: "Lead Generation & Sales Optimization",
+                description: "Driving revenue growth through advanced lead generation and sales conversion techniques.",
+                items: [
+                    "AI-Powered Lead Generation Strategies",
+                    "Sales Funnel & Automation Setup",
+                    "CRM Implementation & Optimization (HubSpot, Zoho, Salesforce)",
+                    "B2B & B2C Telemarketing & Appointment Setting",
+                    "WhatsApp, Email & SMS Marketing Campaigns"
+                ]
+            },
+            {
+                number: "06",
+                title: "Telesales & Sales Scripting",
+                description: "Helping businesses increase sales through well-structured sales scripts and training.",
+                items: [
+                    "Customized Sales Scripting for Various Industries",
+                    "Telesales & Cold Calling Training",
+                    "Call Center Setup & Management",
+                    "Upselling & Cross-Selling Strategies",
+                    "Objection Handling & Negotiation Techniques"
+                ]
+            },
+            {
+                number: "07",
+                title: "Data Analysis & Cybersecurity",
+                description: "Providing businesses with data-driven decision-making strategies and security solutions.",
+                items: [
+                    "Business Intelligence & Data Analytics",
+                    "Predictive Analysis for Sales & Marketing",
+                    "Cybersecurity Solutions & Data Privacy Compliance",
+                    "Risk Assessment & Fraud Prevention",
+                    "AI & Automation for Business Optimization"
+                ]
+            },
+            {
+                number: "08",
+                title: "Finance & Investment Advisory",
+                description: "Helping businesses manage finances, secure investments, and reduce operational costs.",
+                items: [
+                    "Budgeting & Cost Optimization",
+                    "Funding & Investor Relations Strategy",
+                    "Financial Risk Management & Forecasting",
+                    "Taxation & Regulatory Compliance",
+                    "Business Expansion & M&A Consulting"
+                ]
+            },
+            {
+                number: "09",
+                title: "Team Training & Leadership Development",
+                description: "Enhancing workforce productivity and leadership skills for long-term business success.",
+                items: [
+                    "Corporate Leadership & Management Training",
+                    "Sales & Customer Service Training",
+                    "Soft Skills & Communication Development",
+                    "Performance Management & KPI Tracking",
+                    "Call Center & Customer Support Training"
+                ]
+            },
+            {
+                number: "10",
+                title: "Logistics & Supply Chain Management",
+                description: "Helping businesses optimize their distribution, warehousing, and last-mile delivery.",
+                items: [
+                    "Vendor & Supplier Relationship Management",
+                    "Logistics Optimization & Route Planning",
+                    "Inventory & Warehouse Management",
+                    "E-commerce Fulfillment & Order Management",
+                    "Freight & Transportation Consulting"
+                ]
+            }
+        ];
+
+        // Mobile Menu Navigation Logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Service Modal Handler
+        const modal = document.getElementById('serviceModal');
+        const modalNumber = document.getElementById('modalNumber');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalList = document.getElementById('modalList');
+
+        function openServiceModal(index) {
+            const data = servicesData[index];
+            modalNumber.textContent = data.number;
+            modalTitle.textContent = data.title;
+            modalDescription.textContent = data.description;
+
+            modalList.innerHTML = '';
+            data.items.forEach(item => {
+                const li = document.createElement('li');
+                li.className = 'flex items-start gap-2';
+                li.innerHTML = `<i class="fa-solid fa-circle-check text-brand-gold text-xs mt-1"></i><span>${item}</span>`;
+                modalList.appendChild(li);
+            });
+
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+        }
+
+        function closeServiceModal() {
+            modal.classList.add('opacity-0', 'pointer-events-none');
+        }
+
+        // Service Category Filtering
+        function filterServices(category) {
+            const cards = document.querySelectorAll('.service-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-green', 'text-white');
+                btn.classList.add('bg-white', 'text-brand-textMuted');
+            });
+            event.target.classList.remove('bg-white', 'text-brand-textMuted');
+            event.target.classList.add('bg-brand-green', 'text-white');
+
+            cards.forEach(card => {
+                if (category === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // WhatsApp Form Submit
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value;
+            const service = document.getElementById('custService').value;
+            const msg = document.getElementById('custMsg').value;
+
+            const text = `Hello Shoaib Aamir,%0A%0AMy Name: ${encodeURIComponent(name)}%0AInterested Service: ${encodeURIComponent(service)}%0AMessage: ${encodeURIComponent(msg)}`;
+            window.open(`https://wa.me/918378884188?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
